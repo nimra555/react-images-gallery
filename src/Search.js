@@ -28,6 +28,7 @@ class Search extends Component {
     render() {
         return (
             <div>
+                <h1>Image Gallery</h1>
                 <form onSubmit={this.searchHandle}>
                     <div className="form-group">
                         <input type="text" name="keyword"
@@ -41,7 +42,7 @@ class Search extends Component {
                     </div>
                 </form>
                 <div className="row">
-                {!this.state.loader?this.state.photos.map(img => {
+                {!this.state.loader ? this.state.photos.map(img => {
                     return <ShowImages image={img} key={img.id}/>
                 }
                     

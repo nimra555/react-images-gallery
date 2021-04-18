@@ -1,5 +1,6 @@
 import 'bootswatch/dist/materia/bootstrap.min.css';
 import Search from'./Search';
+import './Style.css';
 
 function App() {
   return (
